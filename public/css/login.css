@@ -1,0 +1,13 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\000032}}
+.centeredBlock, .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\000037}}
+.noIndent { margin: 0; padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000312}}
+html, body, .content-main, .container { height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000319}}
+.login-wrap { height: 100px; width: 200px; border: 3px solid black; border-radius: 5px; }
+
+/*# sourceMappingURL=login.css.map */

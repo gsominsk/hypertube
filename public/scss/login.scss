@@ -1,0 +1,24 @@
+$roboto : 'Roboto', tahoma;
+.centeredBlock {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.noIndent {
+	margin: 0;
+	padding: 0;
+}
+
+html,body,.content-main,.container {
+	height: 100%;
+}
+.container {
+	@extend .centeredBlock;
+}
+
+.login-wrap {
+	height: 100px;
+	width: 200px;
+	border: 3px solid black;
+	border-radius: 5px;
+}
