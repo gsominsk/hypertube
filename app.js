@@ -39,6 +39,14 @@ var routes          = require('./routes')(app);
 
 // app.get('/', routes.index);
 
+var logRrequest     = require('./libs/mysqlLogRequests');
+
+app.post('/login', function (req, res) {
+	logRrequest[req.body.action](req, function (body) {
+		res.send(body);
+	});
+});
+
 app.listen(3000, function(){
 	console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
