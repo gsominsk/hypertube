@@ -39,7 +39,7 @@ var routes          = require('./routes')(app);
 
 // app.get('/', routes.index);
 
-var logRrequest     = require('./libs/mysqlLogRequests');
+var logRrequest     = require('./libs/logRequests');
 
 app.post('/login', function (req, res) {
 	logRrequest[req.body.action](req, function (body) {
