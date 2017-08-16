@@ -7,18 +7,106 @@ $roboto : 'Roboto', tahoma;
 .noIndent {
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 
-html,body,.content-main,.container {
+
+html,body,.wrap,.content-main,.container {
 	height: 100%;
+}
+input {
+	width: 100%;
+	padding: 0 5px;
+	margin-bottom: 5px;
+	border: 1px solid black;
+	outline: none;
+}
+input[name="submit"] {
+	max-width: 100px;
+	float: right;
+	cursor: pointer;
+}
+input[name="upload-user-avatar"] {
+	display: none;
 }
 .container {
 	@extend .centeredBlock;
 }
-
-.login-wrap {
-	height: 100px;
-	width: 200px;
+.input_form_wrap {
+	max-width: 300px;
+	padding: 10px;
 	border: 3px solid black;
 	border-radius: 5px;
+	transition: 0.6s;
+}
+.input_form_wrap:last-child {
+	display: none;
+	opacity: 0;
+}
+.register {
+	float: left;
+	height: 40px;
+	line-height: 2.4em;
+	cursor: pointer;
+}
+.hide_block
+{
+	transition: 0.5s;
+	transform: translateY(-300px);
+	opacity: 0;
+}
+.show_block
+{
+	transition: 0.5s;
+	opacity: 1 !important;
+	transform: translateY(0px) !important;
+}
+.if_back {
+	float: left;
+	background: buttonface;
+	cursor: pointer;
+}
+.error_name_wrap,
+.email_created {
+	display: none;
+
+}
+.omni-list-log {
+	@extend .noIndent;
+	li {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	li img {
+		max-width: 100%;
+	}
+}
+.omni-list-reg {
+	@extend .omni-list-log;
+}
+
+.avatar-uploading {
+	font-weight: 700;
+
+	.upload-new-avatar-err {
+		display: none;
+		text-align: center;
+		color: red;
+	}
+	.click-to-upload-avatar {
+		padding: 5px;
+		margin-bottom: 5px;
+		text-align: center;
+		background: lightgrey;
+		cursor: pointer;
+	}
+	.upload-avatar-img-wrap {
+		margin-bottom: 5px;
+	}
+	.upload-avatar-img-wrap img {
+		width: 100%;
+	}
 }

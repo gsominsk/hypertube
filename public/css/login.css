@@ -2,12 +2,55 @@
 .centeredBlock, .container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\000037}}
-.noIndent { margin: 0; padding: 0; }
+.noIndent, .omni-list-log, .omni-list-reg { margin: 0; padding: 0; list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000312}}
-html, body, .content-main, .container { height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000314}}
+html, body, .wrap, .content-main, .container { height: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000319}}
-.login-wrap { height: 100px; width: 200px; border: 3px solid black; border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000317}}
+input { width: 100%; padding: 0 5px; margin-bottom: 5px; border: 1px solid black; outline: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000324}}
+input[name="submit"] { max-width: 100px; float: right; cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000329}}
+input[name="upload-user-avatar"] { display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000335}}
+.input_form_wrap { max-width: 300px; padding: 10px; border: 3px solid black; border-radius: 5px; -webkit-transition:0.6s; transition: 0.6s; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000342}}
+.input_form_wrap:last-child { display: none; opacity: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000346}}
+.register { float: left; height: 40px; line-height: 2.4em; cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000352}}
+.hide_block { -webkit-transition:0.5s; transition: 0.5s; -webkit-transform: translateY(-300px); transform: translateY(-300px); opacity: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000358}}
+.show_block { -webkit-transition:0.5s; transition: 0.5s; opacity: 1 !important; -webkit-transform: translateY(0px) !important; transform: translateY(0px) !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000364}}
+.if_back { float: left; background: buttonface; cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000369}}
+.error_name_wrap, .email_created { display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000376}}
+.omni-list-log li, .omni-list-reg li { display: inline-block; width: 40px; height: 40px; overflow: hidden; cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000383}}
+.omni-list-log li img, .omni-list-reg li img { max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000391}}
+.avatar-uploading { font-weight: 700; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000394}}
+.avatar-uploading .upload-new-avatar-err { display: none; text-align: center; color: red; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\0000399}}
+.avatar-uploading .click-to-upload-avatar { padding: 5px; margin-bottom: 5px; text-align: center; background: lightgrey; cursor: pointer; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\00003106}}
+.avatar-uploading .upload-avatar-img-wrap { margin-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp64\/www\/public\/scss\/login\.scss}line{font-family:\00003109}}
+.avatar-uploading .upload-avatar-img-wrap img { width: 100%; }
 
 /*# sourceMappingURL=login.css.map */
